@@ -31,10 +31,10 @@
 		00E82B586AAE43FC926186BD /* Pods_RxSwiftX_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftX_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DD9CB34ACEFD7C57051AE5 /* Pods-RxSwiftX_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftX_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftX_Example/Pods-RxSwiftX_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0C7DC616EE095E5A46873A6C /* Pods-RxSwiftX_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftX_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftX_Tests/Pods-RxSwiftX_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1C53844990EB4E7F73B37C2C /* RxSwiftX.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RxSwiftX.podspec; path = ../RxSwiftX.podspec; sourceTree = "<group>"; };
+		1C53844990EB4E7F73B37C2C /* RxSwiftX.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxSwiftX.podspec; path = ../RxSwiftX.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1F80EE8AAD228F82F8EE49C6 /* Pods-RxSwiftX_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftX_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftX_Tests/Pods-RxSwiftX_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		202A205CE0594AAC76934FB5 /* Pods-RxSwiftX_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftX_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftX_Example/Pods-RxSwiftX_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		20857A87866B315736FD1D51 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		20857A87866B315736FD1D51 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RxSwiftX_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftX_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		607FACE51AFB9204008FA782 /* RxSwiftX_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftX_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		A256B9712E52B73A5D3A0096 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A256B9712E52B73A5D3A0096 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C05FADD333FA0FDF5F069AFC /* Pods_RxSwiftX_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftX_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -304,10 +304,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftX_Example/Pods-RxSwiftX_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwiftX/RxSwiftX.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftX.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

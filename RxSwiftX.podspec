@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/G-Xi0N/RxSwiftX'
+  s.homepage         = 'https://github.com/Pircate/RxSwiftX'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'G-Xi0N' => 'gao497868860@163.com' }
-  s.source           = { :git => 'https://github.com/G-Xi0N/RxSwiftX.git', :tag => s.version.to_s }
+  s.author           = { 'Pircate' => 'gao497868860@163.com' }
+  s.source           = { :git => 'https://github.com/Pircate/RxSwiftX.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'RxSwiftX/Classes/**/*'
   
@@ -38,5 +38,7 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RxSwift'
+  s.dependency 'RxCocoa'
+  s.dependency 'RxDataSources'
 end
