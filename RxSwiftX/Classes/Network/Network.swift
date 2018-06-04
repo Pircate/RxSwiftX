@@ -8,7 +8,7 @@
 
 import Moya
 import Cache
-import enum Result.Result
+import Result
 
 public let kNetworkTimeoutInterval: TimeInterval = 60
 
