@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
     
   s.name             = 'RxSwiftX'
-  s.version          = '0.2.2'
+  s.version          = '0.2.4'
   s.summary          = 'A short description of RxSwiftX.'
   s.homepage         = 'https://github.com/Pircate/RxSwiftX'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -37,6 +37,7 @@ Pod::Spec.new do |s|
       
       ss.source_files = 'RxSwiftX/Classes/Network/'
       ss.dependency 'Moya/RxSwift'
+      ss.dependency 'Result'
       ss.dependency 'Cache'
       
   end

@@ -8,7 +8,7 @@
 
 import Moya
 import Cache
-import Result
+import enum Result.Result
 
 public let kNetworkTimeoutInterval: TimeInterval = 60
 
@@ -45,7 +45,7 @@ extension MoyaProvider {
         }, requestClosure: { (endpoint, callback) -> Void in
             if var request = try? endpoint.urlRequest() {
                 request.timeoutInterval = timeoutInterval
-                callback(Result.success(request))
+                callback(.success(request))
             }
         }, plugins: plugins)
     }
