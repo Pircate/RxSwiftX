@@ -1,6 +1,6 @@
 {
   "name": "RxSwiftX",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "summary": "A short description of RxSwiftX.",
   "homepage": "https://github.com/Pircate/RxSwiftX",
   "license": {
@@ -12,16 +12,12 @@
   },
   "source": {
     "git": "https://github.com/Pircate/RxSwiftX.git",
-    "tag": "0.1.1"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"
   },
   "default_subspecs": "Core",
-  "source_files": [
-    "RxSwiftX/Classes/Swift/",
-    "RxSwiftX/Classes/Cocoa/"
-  ],
   "dependencies": {
     "RxSwift": [
 
@@ -32,13 +28,26 @@
   },
   "subspecs": [
     {
-      "name": "Core"
+      "name": "Core",
+      "source_files": [
+        "RxSwiftX/Classes/Swift/",
+        "RxSwiftX/Classes/Cocoa/"
+      ]
     },
     {
       "name": "DataSources",
       "source_files": "RxSwiftX/Classes/DataSources/",
       "dependencies": {
         "RxDataSources": [
+
+        ]
+      }
+    },
+    {
+      "name": "MJRefresh",
+      "source_files": "RxSwiftX/Classes/MJRefresh/",
+      "dependencies": {
+        "MJRefresh": [
 
         ]
       }
