@@ -45,7 +45,7 @@ extension MoyaProvider {
         }, requestClosure: { (endpoint, callback) -> Void in
             if var request = try? endpoint.urlRequest() {
                 request.timeoutInterval = timeoutInterval
-                callback(.success(request))
+                callback(Result.success(request))
             }
         }, plugins: plugins)
     }
