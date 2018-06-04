@@ -3552,6 +3552,39 @@
 			};
 			name = Release;
 		};
+		3E6130C55F86FB5E29C8D09F1CE6B42B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EB879FC9B9CCE592B7C3E81AF8D3489 /* RxSwiftX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RxSwiftX/RxSwiftX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxSwiftX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RxSwiftX/RxSwiftX.modulemap";
+				PRODUCT_MODULE_NAME = RxSwiftX;
+				PRODUCT_NAME = RxSwiftX;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4DCC4E521E8FE8FB248712D29F7FA894 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6DB7A40E1DEFFDD22D6A16CDC7FA79A0 /* Pods-RxSwiftX_Tests.debug.xcconfig */;
@@ -3902,6 +3935,38 @@
 			};
 			name = Release;
 		};
+		B9E53FA6933F4D682E9B08A18E0A3489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EB879FC9B9CCE592B7C3E81AF8D3489 /* RxSwiftX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RxSwiftX/RxSwiftX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxSwiftX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RxSwiftX/RxSwiftX.modulemap";
+				PRODUCT_MODULE_NAME = RxSwiftX;
+				PRODUCT_NAME = RxSwiftX;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D1F14553D3C0FF5BB168D839DB8C565A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BE2738554309CA5C539B29494C1BE308 /* RxDataSources.xcconfig */;
@@ -3923,38 +3988,6 @@
 				MODULEMAP_FILE = "Target Support Files/RxDataSources/RxDataSources.modulemap";
 				PRODUCT_MODULE_NAME = RxDataSources;
 				PRODUCT_NAME = RxDataSources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DB68AAB0757A5505860FB394250A9C37 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EB879FC9B9CCE592B7C3E81AF8D3489 /* RxSwiftX.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RxSwiftX/RxSwiftX-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxSwiftX/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RxSwiftX/RxSwiftX.modulemap";
-				PRODUCT_MODULE_NAME = RxSwiftX;
-				PRODUCT_NAME = RxSwiftX;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -3994,39 +4027,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DEC7C8E307DC6BC931A05BE87462877D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EB879FC9B9CCE592B7C3E81AF8D3489 /* RxSwiftX.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RxSwiftX/RxSwiftX-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxSwiftX/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RxSwiftX/RxSwiftX.modulemap";
-				PRODUCT_MODULE_NAME = RxSwiftX;
-				PRODUCT_NAME = RxSwiftX;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -4208,8 +4208,8 @@
 		3B0CF29056993B8BE2D0B44C40393F96 /* Build configuration list for PBXNativeTarget "RxSwiftX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB68AAB0757A5505860FB394250A9C37 /* Debug */,
-				DEC7C8E307DC6BC931A05BE87462877D /* Release */,
+				B9E53FA6933F4D682E9B08A18E0A3489 /* Debug */,
+				3E6130C55F86FB5E29C8D09F1CE6B42B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

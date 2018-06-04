@@ -35,7 +35,6 @@ PODS:
   - RxSwiftX/Network (0.2.4):
     - Cache
     - Moya/RxSwift
-    - Result
     - RxCocoa
     - RxSwift
 
@@ -71,7 +70,7 @@ SPEC CHECKSUMS:
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: e49536837d9901277638493ea537394d4b55f570
-  RxSwiftX: d4076a0d449e7529f4d7218b44997a72a533c775
+  RxSwiftX: af9d8c7b83027e41d92e9a4205e39eb9d6ca3064
 
 PODFILE CHECKSUM: 5b06d68fddafd9a22a494876b394ecb9253e78c0
 

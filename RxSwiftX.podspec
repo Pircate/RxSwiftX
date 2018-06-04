@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
   s.default_subspec = "Core"
   s.dependency 'RxSwift'
   s.dependency 'RxCocoa'
+  s.swift_version = '4.1'
   
   s.subspec 'Core' do |ss|
       
@@ -37,7 +38,6 @@ Pod::Spec.new do |s|
       
       ss.source_files = 'RxSwiftX/Classes/Network/'
       ss.dependency 'Moya/RxSwift'
-      ss.dependency 'Result'
       ss.dependency 'Cache'
       
   end

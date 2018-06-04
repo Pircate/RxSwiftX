@@ -26,6 +26,7 @@
 
     ]
   },
+  "swift_version": "4.1",
   "subspecs": [
     {
       "name": "Core",
@@ -48,9 +49,6 @@
       "source_files": "RxSwiftX/Classes/Network/",
       "dependencies": {
         "Moya/RxSwift": [
-
-        ],
-        "Result": [
 
         ],
         "Cache": [
