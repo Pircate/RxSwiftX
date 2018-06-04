@@ -22,7 +22,7 @@ pod 'RxSwiftX'
 
 ## Author
 
-G-Xi0N, gao497868860@163.com
+Pircate, gao497868860@163.com
 
 ## License
 
