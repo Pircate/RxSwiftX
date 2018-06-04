@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'RxSwiftX_Example' do
   pod 'RxSwiftX', :path => '../'
+  pod 'RxSwiftX/DataSources', :path => '../'
 
   target 'RxSwiftX_Tests' do
     inherit! :search_paths

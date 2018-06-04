@@ -2,7 +2,6 @@
   "name": "RxSwiftX",
   "version": "0.1.1",
   "summary": "A short description of RxSwiftX.",
-  "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Pircate/RxSwiftX",
   "license": {
     "type": "MIT",
@@ -18,16 +17,31 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "RxSwiftX/Classes/**/*",
+  "default_subspecs": "Core",
+  "source_files": [
+    "RxSwiftX/Classes/Swift/",
+    "RxSwiftX/Classes/Cocoa/"
+  ],
   "dependencies": {
     "RxSwift": [
 
     ],
     "RxCocoa": [
 
-    ],
-    "RxDataSources": [
-
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "Core"
+    },
+    {
+      "name": "DataSources",
+      "source_files": "RxSwiftX/Classes/DataSources/",
+      "dependencies": {
+        "RxDataSources": [
+
+        ]
+      }
+    }
+  ]
 }
