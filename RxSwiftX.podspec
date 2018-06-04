@@ -33,6 +33,14 @@ Pod::Spec.new do |s|
       
   end
   
+  s.subspec 'Network' do |ss|
+      
+      ss.source_files = 'RxSwiftX/Classes/Network/'
+      ss.dependency 'Moya/RxSwift'
+      ss.dependency 'Cache'
+      
+  end
+  
   s.subspec 'MJRefresh' do |ss|
       
       ss.source_files = 'RxSwiftX/Classes/MJRefresh/'
