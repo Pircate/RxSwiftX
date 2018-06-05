@@ -1,8 +1,8 @@
 //
 //  UITableView+Rx.swift
-//  Alamofire
+//  RxSwiftX
 //
-//  Created by GorXion on 2018/6/4.
+//  Created by Pircate on 2018/6/4.
 //
 
 import RxSwift
@@ -52,6 +52,12 @@ public extension Reactive where Base: UITableView {
     var isEditing: Binder<Bool> {
         return Binder(base) { tableView, isEditing in
             tableView.setEditing(isEditing, animated: true)
+        }
+    }
+    
+    func deselectRow(animated: Bool) -> Binder<IndexPath> {
+        return Binder(base) { tableView, indexPath in
+            tableView.deselectRow(at: indexPath, animated: animated)
         }
     }
 }
