@@ -47,8 +47,8 @@ open class RxTableViewSectionedDelegate<Section>: NSObject, UITableViewDelegate 
         }
     }
     
-    public init(heightForHeaderInSection: @escaping HeightForHeaderInSection = { _, _ in UITableViewAutomaticDimension },
-                heightForFooterInSection: @escaping HeightForFooterInSection = { _, _ in UITableViewAutomaticDimension },
+    public init(heightForHeaderInSection: @escaping HeightForHeaderInSection = { _, _ in UITableView.automaticDimension },
+                heightForFooterInSection: @escaping HeightForFooterInSection = { _, _ in UITableView.automaticDimension },
                 viewForHeaderInSection: @escaping ViewForHeaderInSection = { _, _ in nil },
                 viewForFooterInSection: @escaping ViewForFooterInSection = { _, _ in nil }) {
         self.heightForHeaderInSection = heightForHeaderInSection

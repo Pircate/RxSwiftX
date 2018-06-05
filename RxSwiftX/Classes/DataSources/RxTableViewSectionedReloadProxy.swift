@@ -30,9 +30,9 @@ open class RxTableViewSectionedReloadProxy<S: SectionModelType>: RxTableViewSect
                 canMoveRowAtIndexPath: @escaping CanMoveRowAtIndexPath = { _, _ in false },
                 sectionIndexTitles: @escaping SectionIndexTitles = { _ in nil },
                 sectionForSectionIndexTitle: @escaping SectionForSectionIndexTitle = { _, _, index in index },
-                heightForRowAtIndexPath: @escaping HeightForRowAtIndexPath = { _, _, _ in UITableViewAutomaticDimension },
-                heightForHeaderInSection: @escaping HeightForHeaderInSection = { _, _ in UITableViewAutomaticDimension },
-                heightForFooterInSection: @escaping HeightForFooterInSection = { _, _ in UITableViewAutomaticDimension },
+                heightForRowAtIndexPath: @escaping HeightForRowAtIndexPath = { _, _, _ in UITableView.automaticDimension },
+                heightForHeaderInSection: @escaping HeightForHeaderInSection = { _, _ in UITableView.automaticDimension },
+                heightForFooterInSection: @escaping HeightForFooterInSection = { _, _ in UITableView.automaticDimension },
                 viewForHeaderInSection: @escaping ViewForHeaderInSection = { _, _ in nil },
                 viewForFooterInSection: @escaping ViewForFooterInSection = { _, _ in nil }) {
         
