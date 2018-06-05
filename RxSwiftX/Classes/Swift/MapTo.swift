@@ -20,13 +20,13 @@ public extension ObservableType {
     }
 }
 
-public extension Driver {
+public extension SharedSequenceConvertibleType {
     
-    func map<T>(to element: @escaping @autoclosure () -> T) -> SharedSequence<S, T> {
+    func map<T>(to element: @escaping @autoclosure () -> T) -> SharedSequence<SharingStrategy, T> {
         return map { _ in element() }
     }
     
-    func flatMap<T>(to element: @escaping @autoclosure () -> SharedSequence<S, T>) -> SharedSequence<S, T> {
+    func flatMap<T>(to element: @escaping @autoclosure () -> SharedSequence<SharingStrategy, T>) -> SharedSequence<SharingStrategy, T> {
         return flatMap { _ in element() }
     }
 }
