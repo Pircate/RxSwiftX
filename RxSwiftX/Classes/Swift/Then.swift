@@ -18,9 +18,9 @@ public extension ObservableType {
     }
 }
 
-public extension SharedSequenceConvertibleType {
+public extension Driver {
     
-    func then(_ closure: @escaping @autoclosure () -> Void) -> SharedSequence<SharingStrategy, E> {
+    func then(_ closure: @escaping @autoclosure () -> Void) -> SharedSequence<S, E> {
         return map {
             closure()
             return $0
