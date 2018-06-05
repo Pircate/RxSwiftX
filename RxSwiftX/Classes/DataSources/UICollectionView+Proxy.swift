@@ -80,3 +80,12 @@ extension ObservableType {
             }
     }
 }
+
+fileprivate func bindingError(_ error: Swift.Error) {
+    let error = "Binding error: \(error)"
+    #if DEBUG
+    fatalError(error)
+    #else
+    print(error)
+    #endif
+}
