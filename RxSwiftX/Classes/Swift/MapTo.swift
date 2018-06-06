@@ -15,6 +15,10 @@ public extension ObservableType {
         return map { _ in transform() }
     }
     
+    func map() -> Observable<Void> {
+        return map { _ in () }
+    }
+    
     func flatMap<T>(to transform: @escaping @autoclosure () -> Observable<T>) -> Observable<T> {
         return flatMap { _ in transform() }
     }
@@ -24,6 +28,10 @@ public extension Driver {
     
     func map<T>(to transform: @escaping @autoclosure () -> T) -> SharedSequence<S, T> {
         return map { _ in transform() }
+    }
+    
+    func map() -> SharedSequence<S, Void> {
+        return map { _ in () }
     }
     
     func flatMap<T>(to transform: @escaping @autoclosure () -> SharedSequence<S, T>) -> SharedSequence<S, T> {
