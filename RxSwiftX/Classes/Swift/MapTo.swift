@@ -11,12 +11,12 @@ import RxCocoa
 
 public extension ObservableType {
     
-    func map<T>(to transform: @escaping @autoclosure () -> T) -> Observable<T> {
-        return map { _ in transform() }
+    var mapVoid: Observable<Void> {
+        return map { _ in () }
     }
     
-    func map() -> Observable<Void> {
-        return map { _ in () }
+    func map<T>(to transform: @escaping @autoclosure () -> T) -> Observable<T> {
+        return map { _ in transform() }
     }
     
     func flatMap<T>(to transform: @escaping @autoclosure () -> Observable<T>) -> Observable<T> {
@@ -26,12 +26,12 @@ public extension ObservableType {
 
 public extension Driver {
     
-    func map<T>(to transform: @escaping @autoclosure () -> T) -> SharedSequence<S, T> {
-        return map { _ in transform() }
+    var mapVoid: SharedSequence<S, Void> {
+        return map { _ in () }
     }
     
-    func map() -> SharedSequence<S, Void> {
-        return map { _ in () }
+    func map<T>(to transform: @escaping @autoclosure () -> T) -> SharedSequence<S, T> {
+        return map { _ in transform() }
     }
     
     func flatMap<T>(to transform: @escaping @autoclosure () -> SharedSequence<S, T>) -> SharedSequence<S, T> {
