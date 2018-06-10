@@ -24,7 +24,7 @@ pod 'RxSwiftX'
 
 ```ruby
 pod 'RxSwiftX/DataSources'
-pod 'RxSwiftX/Network' -> [RxNetwork](https://github.com/Pircate/RxNetwork)
+pod 'RxSwiftX/Network'
 pod 'RxSwiftX/MJRefresh'
 ```
 
