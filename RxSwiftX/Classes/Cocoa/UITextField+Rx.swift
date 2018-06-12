@@ -38,4 +38,10 @@ public extension UITextField {
             }
         }
     }
+    
+    var valueChanged: Binder<Void> {
+        return Binder(base) { textField, _ in
+            textField.sendActions(for: .valueChanged)
+        }
+    }
 }
