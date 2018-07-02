@@ -10,13 +10,7 @@ import RxSwift
 import RxCocoa
 
 public extension Reactive where Base: UIViewController {
-    
-    func push<T: UIViewController>(_ type: T.Type, animated: Bool = true) -> Binder<Void> {
-        return Binder(base) { viewController, _ in
-            viewController.navigationController?.pushViewController(type.init(), animated: animated)
-        }
-    }
-    
+        
     func push(animated: Bool = true) -> Binder<UIViewController> {
         return Binder(base) { viewController, to in
             viewController.navigationController?.pushViewController(to, animated: animated)
