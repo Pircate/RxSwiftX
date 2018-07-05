@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
     
   s.name             = 'RxSwiftX'
-  s.version          = '0.3.9'
+  s.version          = '0.4.0'
   s.summary          = 'A short description of RxSwiftX.'
   s.homepage         = 'https://github.com/Pircate/RxSwiftX'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
