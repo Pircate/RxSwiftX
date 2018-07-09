@@ -15,12 +15,12 @@ public extension ObservableType where E == IndexPath {
         return filter { $0.section == section }
     }
     
-    func row(_ row: Int, at section: Int = 0) -> Observable<E> {
-        return filter { $0.section == section && $0.row == row }
+    func row(_ row: Int) -> Observable<E> {
+        return filter { $0.row == row }
     }
     
-    func item(_ item: Int, at section: Int = 0) -> Observable<E> {
-        return filter { $0.section == section && $0.item == item }
+    func item(_ item: Int) -> Observable<E> {
+        return filter { $0.item == item }
     }
 }
 
@@ -30,11 +30,11 @@ public extension Driver where E == IndexPath {
         return filter { $0.section == section }
     }
     
-    func row(_ row: Int, at section: Int = 0) -> SharedSequence<S, E> {
-        return filter { $0.section == section && $0.row == row }
+    func row(_ row: Int) -> SharedSequence<S, E> {
+        return filter { $0.row == row }
     }
     
-    func item(_ item: Int, at section: Int = 0) -> SharedSequence<S, E> {
-        return filter { $0.section == section && $0.item == item }
+    func item(_ item: Int) -> SharedSequence<S, E> {
+        return filter { $0.item == item }
     }
 }
