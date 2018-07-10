@@ -8,18 +8,18 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
-  - RxSwiftX (0.4.1):
+  - RxSwiftX (0.4.2):
     - RxCocoa
     - RxSwift
-    - RxSwiftX/Core (= 0.4.1)
-  - RxSwiftX/Core (0.4.1):
+    - RxSwiftX/Core (= 0.4.2)
+  - RxSwiftX/Core (0.4.2):
     - RxCocoa
     - RxSwift
-  - RxSwiftX/DataSources (0.4.1):
+  - RxSwiftX/DataSources (0.4.2):
     - RxCocoa
     - RxDataSources
     - RxSwift
-  - RxSwiftX/MJRefresh (0.4.1):
+  - RxSwiftX/MJRefresh (0.4.2):
     - MJRefresh
     - RxCocoa
     - RxSwift
@@ -47,7 +47,7 @@ SPEC CHECKSUMS:
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
-  RxSwiftX: b5888da01619f1c73290b1ce7fb99e1c92514b54
+  RxSwiftX: 0c7190a274474a888968a21394d134b2c81e3878
 
 PODFILE CHECKSUM: 30c6bc76d2c7a8dde2b9d30b77a47381d2150786
 
