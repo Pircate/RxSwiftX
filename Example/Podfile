@@ -4,7 +4,6 @@ use_frameworks!
 target 'RxSwiftX_Example' do
   pod 'RxSwiftX', :path => '../'
   pod 'RxSwiftX/DataSources', :path => '../'
-  pod 'RxSwiftX/Network', :path => '../'
   pod 'RxSwiftX/MJRefresh', :path => '../'
 
   target 'RxSwiftX_Tests' do

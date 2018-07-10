@@ -45,18 +45,6 @@
       }
     },
     {
-      "name": "Network",
-      "source_files": "RxSwiftX/Classes/Network/",
-      "dependencies": {
-        "Moya/RxSwift": [
-
-        ],
-        "Cache": [
-
-        ]
-      }
-    },
-    {
       "name": "MJRefresh",
       "source_files": "RxSwiftX/Classes/MJRefresh/",
       "dependencies": {
