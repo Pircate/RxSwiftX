@@ -23,7 +23,6 @@
 		0D83A315CC047F5598A3CE06F9605F35 /* StartWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718D025B73C4FD17A67010A3481ADED /* StartWith.swift */; };
 		0D898D86684BAC3C0F4C901F80052F79 /* UILabel+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216215462CBF80AF0FD2DD00CE3C4F26 /* UILabel+Rx.swift */; };
 		0E66F910D893BDA6298F61A0B218E0C2 /* Skip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE40F9330B6FF01367490E6DC064FE /* Skip.swift */; };
-		0EB9CFBA07CE23034299C223E285410C /* RxTableViewSectionedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1337966C6210DB54B105E86E9961B4 /* RxTableViewSectionedDelegate.swift */; };
 		0EFB524EFDF2F8712A2F5067817A672E /* UIScrollView+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 2820EF96AF4299642DD9165088EB90B4 /* UIScrollView+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0FA7FC4CC5CFCC22BA1C406D847183EE /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373688AF9F4916359DCBC5031ACC3D8F /* Sequence.swift */; };
 		101F836F887C01B45F4DCF351EBC28D1 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C424AFF51A5AD6549D9E17EDA99B0721 /* MJRefreshBackNormalFooter.m */; };
@@ -804,7 +803,6 @@
 		A8F5C3C0223B7F887890E53CC2FDB02F /* MJRefresh.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MJRefresh.bundle; path = MJRefresh/MJRefresh.bundle; sourceTree = "<group>"; };
 		A9970044973666EF19AB4363FE04E404 /* Pods-RxSwiftX_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RxSwiftX_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AA6BE6C473B717246F5F72A47F14CFAE /* SynchronizedUnsubscribeType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedUnsubscribeType.swift; path = RxSwift/Concurrency/SynchronizedUnsubscribeType.swift; sourceTree = "<group>"; };
-		AB1337966C6210DB54B105E86E9961B4 /* RxTableViewSectionedDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RxTableViewSectionedDelegate.swift; sourceTree = "<group>"; };
 		AB39FBFDB99F57983BDFD7E6A7EFC2D2 /* ObservableConvertibleType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableConvertibleType.swift; path = RxSwift/ObservableConvertibleType.swift; sourceTree = "<group>"; };
 		AB5624F4DE6EFD76B7781A671B8658F8 /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
 		AB8A23216F86EE04C04D6498F328BBBF /* SectionedViewDataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionedViewDataSourceType.swift; path = RxCocoa/Common/SectionedViewDataSourceType.swift; sourceTree = "<group>"; };
@@ -1467,7 +1465,6 @@
 			isa = PBXGroup;
 			children = (
 				965AFABE6B28B28724B9A6901DB439A4 /* IndexPath+Rx.swift */,
-				AB1337966C6210DB54B105E86E9961B4 /* RxTableViewSectionedDelegate.swift */,
 				3CBC2EC84095809455FC3E518EDD1646 /* RxTextFieldDelegateProxy.swift */,
 				233F6BC479DF1E45C9622DAC8A142CEA /* UIResponder+Rx.swift */,
 				54408D225AD3BBE5BD3B134F93FCD447 /* UIScrollView+Rx.swift */,
@@ -2368,7 +2365,6 @@
 				3B2D1583D73CA97D8E068D7B3F143AA5 /* ObserveOn.swift in Sources */,
 				2E969F739051CC2442E2D6802F36236B /* RxCollectionViewSectionedReloadProxy.swift in Sources */,
 				CD3B82FD57EFA9DEFDE5A66AD7677677 /* RxSwiftX-dummy.m in Sources */,
-				0EB9CFBA07CE23034299C223E285410C /* RxTableViewSectionedDelegate.swift in Sources */,
 				F7457B1C7BF19D7A54B8AA0AD0E0D0A6 /* RxTableViewSectionedReloadProxy.swift in Sources */,
 				3FB12991CEE15EBCFCC91F34546CE714 /* RxTextFieldDelegateProxy.swift in Sources */,
 				9D33CEB58A61AC1FC3795B61A0A5C604 /* ShareOnce.swift in Sources */,
