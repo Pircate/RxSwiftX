@@ -10,5 +10,4 @@ podfile: Example/Podfile
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-- set -o pipefail
 - pod lib lint
