@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  RxSwiftX
 //
-//  Created by G-Xi0N on 06/04/2018.
-//  Copyright (c) 2018 G-Xi0N. All rights reserved.
+//  Created by Pircate on 06/04/2018.
+//  Copyright (c) 2018 Pircate. All rights reserved.
 //
 
 import UIKit
