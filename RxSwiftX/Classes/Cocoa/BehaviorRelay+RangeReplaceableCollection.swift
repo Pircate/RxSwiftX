@@ -16,6 +16,7 @@ public extension BehaviorRelay where Element: RangeReplaceableCollection {
         accept(value)
     }
     
+    @discardableResult
     func remove(at index: Element.Index) -> Element.Element {
         var value = self.value
         let element = value.remove(at: index)
