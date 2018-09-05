@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E14A62900910444707A5504D25EC98DC"
+               BlueprintIdentifier = "546B747B9DB0515E059EEBA0B9E98B42"
                BuildableName = "MJRefresh.framework"
                BlueprintName = "MJRefresh"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E14A62900910444707A5504D25EC98DC"
+            BlueprintIdentifier = "546B747B9DB0515E059EEBA0B9E98B42"
             BuildableName = "MJRefresh.framework"
             BlueprintName = "MJRefresh"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E14A62900910444707A5504D25EC98DC"
+            BlueprintIdentifier = "546B747B9DB0515E059EEBA0B9E98B42"
             BuildableName = "MJRefresh.framework"
             BlueprintName = "MJRefresh"
             ReferencedContainer = "container:Pods.xcodeproj">
