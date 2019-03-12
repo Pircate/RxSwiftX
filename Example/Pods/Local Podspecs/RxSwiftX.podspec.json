@@ -1,6 +1,6 @@
 {
   "name": "RxSwiftX",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "summary": "A short description of RxSwiftX.",
   "homepage": "https://github.com/Pircate/RxSwiftX",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/Pircate/RxSwiftX.git",
-    "tag": "0.5.1"
+    "tag": "0.5.2"
   },
   "platforms": {
     "ios": "9.0"
@@ -26,7 +26,7 @@
 
     ]
   },
-  "swift_version": "4.1",
+  "swift_versions": "4.2",
   "subspecs": [
     {
       "name": "Core",
