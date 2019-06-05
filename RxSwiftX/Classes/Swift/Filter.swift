@@ -10,21 +10,21 @@ import RxSwift
 
 public extension ObservableType {
     
-    func filter(_ predicate: @escaping @autoclosure () throws -> Bool) -> Observable<E> {
+    func filter(_ predicate: @escaping @autoclosure () throws -> Bool) -> Observable<Element> {
         return filter { _ in try predicate() }
     }
 }
 
-public extension PrimitiveSequenceType where TraitType == MaybeTrait {
+public extension PrimitiveSequenceType where Trait == MaybeTrait {
     
-    func filter(_ predicate: @escaping @autoclosure () throws -> Bool) -> Maybe<ElementType> {
+    func filter(_ predicate: @escaping @autoclosure () throws -> Bool) -> Maybe<Element> {
         return filter { _ in try predicate() }
     }
 }
 
-public extension PrimitiveSequenceType where TraitType == SingleTrait {
+public extension PrimitiveSequenceType where Trait == SingleTrait {
     
-    func filter(_ predicate: @escaping @autoclosure () throws -> Bool) -> Maybe<ElementType> {
+    func filter(_ predicate: @escaping @autoclosure () throws -> Bool) -> Maybe<Element> {
         return filter { _ in try predicate() }
     }
 }

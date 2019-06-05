@@ -9,13 +9,13 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-open class RxTableViewSectionedReloadProxy<S: SectionModelType>: RxTableViewSectionedReloadDataSource<S>, UITableViewDelegate {
+open class RxTableViewSectionedReloadProxy<Section: SectionModelType>: RxTableViewSectionedReloadDataSource<Section>, UITableViewDelegate {
     
-    public typealias HeightForRowAtIndexPath = (RxTableViewSectionedReloadProxy<S>, UITableView, IndexPath, I) -> CGFloat
-    public typealias HeightForHeaderInSection = (RxTableViewSectionedReloadProxy<S>, UITableView, Int) -> CGFloat
-    public typealias HeightForFooterInSection = (RxTableViewSectionedReloadProxy<S>, UITableView, Int) -> CGFloat
-    public typealias ViewForHeaderInSection = (RxTableViewSectionedReloadProxy<S>, UITableView, Int) -> UIView?
-    public typealias ViewForFooterInSection = (RxTableViewSectionedReloadProxy<S>, UITableView, Int) -> UIView?
+    public typealias HeightForRowAtIndexPath = (RxTableViewSectionedReloadProxy<Section>, UITableView, IndexPath, Item) -> CGFloat
+    public typealias HeightForHeaderInSection = (RxTableViewSectionedReloadProxy<Section>, UITableView, Int) -> CGFloat
+    public typealias HeightForFooterInSection = (RxTableViewSectionedReloadProxy<Section>, UITableView, Int) -> CGFloat
+    public typealias ViewForHeaderInSection = (RxTableViewSectionedReloadProxy<Section>, UITableView, Int) -> UIView?
+    public typealias ViewForFooterInSection = (RxTableViewSectionedReloadProxy<Section>, UITableView, Int) -> UIView?
     
     open var heightForRowAtIndexPath: HeightForRowAtIndexPath
     open var heightForHeaderInSection: HeightForHeaderInSection

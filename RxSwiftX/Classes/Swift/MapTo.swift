@@ -22,11 +22,11 @@ public extension ObservableType {
 
 public extension Driver {
     
-    func map<T>(to transform: @escaping @autoclosure () -> T) -> SharedSequence<S, T> {
+    func map<T>(to transform: @escaping @autoclosure () -> T) -> SharedSequence<SharingStrategy, T> {
         return map { _ in transform() }
     }
     
-    func flatMap<T>(to transform: @escaping @autoclosure () -> SharedSequence<S, T>) -> SharedSequence<S, T> {
+    func flatMap<T>(to transform: @escaping @autoclosure () -> SharedSequence<SharingStrategy, T>) -> SharedSequence<SharingStrategy, T> {
         return flatMap { _ in transform() }
     }
 }

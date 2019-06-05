@@ -10,7 +10,7 @@ import RxSwift
 
 public extension ObservableType {
     
-    func observeOnMainScheduler() -> Observable<E> {
+    func observeOnMainScheduler() -> Observable<Element> {
         return observeOn(MainScheduler.instance)
     }
 }

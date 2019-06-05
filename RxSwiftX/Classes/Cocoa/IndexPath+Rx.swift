@@ -9,32 +9,32 @@
 import RxSwift
 import RxCocoa
 
-public extension ObservableType where E == IndexPath {
+public extension ObservableType where Element == IndexPath {
     
-    func section(_ section: Int) -> Observable<E> {
+    func section(_ section: Int) -> Observable<Element> {
         return filter { $0.section == section }
     }
     
-    func row(_ row: Int) -> Observable<E> {
+    func row(_ row: Int) -> Observable<Element> {
         return filter { $0.row == row }
     }
     
-    func item(_ item: Int) -> Observable<E> {
+    func item(_ item: Int) -> Observable<Element> {
         return filter { $0.item == item }
     }
 }
 
-public extension Driver where E == IndexPath {
+public extension Driver where Element == IndexPath {
     
-    func section(_ section: Int) -> SharedSequence<S, E> {
+    func section(_ section: Int) -> SharedSequence<SharingStrategy, Element> {
         return filter { $0.section == section }
     }
     
-    func row(_ row: Int) -> SharedSequence<S, E> {
+    func row(_ row: Int) -> SharedSequence<SharingStrategy, Element> {
         return filter { $0.row == row }
     }
     
-    func item(_ item: Int) -> SharedSequence<S, E> {
+    func item(_ item: Int) -> SharedSequence<SharingStrategy, Element> {
         return filter { $0.item == item }
     }
 }

@@ -7,7 +7,7 @@
 
 import RxSwift
 
-public extension ObservableType where E: Collection {
+public extension ObservableType where Element: Collection {
     
     var count: Observable<Int> {
         return map { $0.count }

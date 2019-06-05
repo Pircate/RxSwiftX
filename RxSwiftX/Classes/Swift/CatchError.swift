@@ -11,13 +11,13 @@ import RxCocoa
 
 public extension ObservableConvertibleType {
     
-    func catchErrorJustReturn(closure: @escaping @autoclosure () throws -> E) -> Observable<E> {
+    func catchErrorJustReturn(closure: @escaping @autoclosure () throws -> Element) -> Observable<Element> {
         return asObservable().catchError { _ in
             return Observable.just(try closure())
         }
     }
     
-    func catchErrorJustComplete() -> Observable<E> {
+    func catchErrorJustComplete() -> Observable<Element> {
         return asObservable().catchError { _ in
             Observable.empty()
         }
@@ -26,13 +26,13 @@ public extension ObservableConvertibleType {
 
 public extension ObservableConvertibleType {
     
-    func asDriver(onErrorJustReturnClosure: @escaping @autoclosure () -> E) -> Driver<E> {
+    func asDriver(onErrorJustReturnClosure: @escaping @autoclosure () -> Element) -> Driver<Element> {
         return asDriver { _ in
             Driver.just(onErrorJustReturnClosure())
         }
     }
     
-    func asDriverOnErrorJustComplete() -> Driver<E> {
+    func asDriverOnErrorJustComplete() -> Driver<Element> {
         return asDriver { _ in
             Driver.empty()
         }

@@ -13,7 +13,7 @@ public extension Reactive where Base: UITableView {
     func items<Proxy: RxTableViewDataSourceType & UITableViewDataSource & UITableViewDelegate, O: ObservableType>(proxy: Proxy)
         -> (_ source: O)
         -> Disposable
-        where Proxy.Element == O.E
+        where Proxy.Element == O.Element
     {
         return { source in
             // This is called for sideeffects only, and to make sure delegate proxy is in place when
@@ -40,7 +40,7 @@ fileprivate extension ObservableType {
     func subscribeTableViewProxy(_ tableView: UITableView,
                                  proxy: UITableViewDataSource & UITableViewDelegate,
                                  retainDelegate: Bool,
-                                 binding: @escaping (Event<E>) -> Void)
+                                 binding: @escaping (Event<Element>) -> Void)
         -> Disposable {
             let dataSourceProxy = RxTableViewDataSourceProxy.proxy(for: tableView)
             let delegateProxy = RxTableViewDelegateProxy.proxy(for: tableView)
@@ -59,7 +59,7 @@ fileprivate extension ObservableType {
                 // source can never end, otherwise it would release the subscriber, and deallocate the data source
                 .concat(Observable.never())
                 .takeUntil(tableView.rx.deallocated)
-                .subscribe { [weak tableView] (event: Event<E>) in
+                .subscribe { [weak tableView] (event: Event<Element>) in
                     
                     if let tableView = tableView {
                         assert(dataSourceProxy === RxTableViewDataSourceProxy.currentDelegate(for: tableView), "Proxy changed from the time it was first set.\nOriginal: \(dataSourceProxy)\nExisting: \(String(describing: RxTableViewDataSourceProxy.currentDelegate(for: tableView)))")

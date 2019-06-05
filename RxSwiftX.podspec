@@ -1,8 +1,8 @@
 
 Pod::Spec.new do |s|
-    
+  
   s.name             = 'RxSwiftX'
-  s.version          = '0.5.2'
+  s.version          = '0.6.0'
   s.summary          = 'A short description of RxSwiftX.'
   s.homepage         = 'https://github.com/Pircate/RxSwiftX'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.default_subspec = "Core"
   s.dependency 'RxSwift'
   s.dependency 'RxCocoa'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   
   s.subspec 'Core' do |ss|
       

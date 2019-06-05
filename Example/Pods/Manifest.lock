@@ -1,27 +1,28 @@
 PODS:
-  - Differentiator (3.1.0)
-  - MJRefresh (3.1.15.7)
-  - RxAtomic (4.4.2)
-  - RxCocoa (4.4.2):
-    - RxSwift (>= 4.4.2, ~> 4.4)
-  - RxDataSources (3.1.0):
-    - Differentiator (~> 3.0)
-    - RxCocoa (~> 4.0)
-    - RxSwift (~> 4.0)
-  - RxSwift (4.4.2):
-    - RxAtomic (>= 4.4.2, ~> 4.4)
-  - RxSwiftX (0.5.2):
+  - Differentiator (4.0.1)
+  - MJRefresh (3.2.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - RxSwiftX (0.6.0):
     - RxCocoa
     - RxSwift
-    - RxSwiftX/Core (= 0.5.2)
-  - RxSwiftX/Core (0.5.2):
+    - RxSwiftX/Core (= 0.6.0)
+  - RxSwiftX/Core (0.6.0):
     - RxCocoa
     - RxSwift
-  - RxSwiftX/DataSources (0.5.2):
+  - RxSwiftX/DataSources (0.6.0):
     - RxCocoa
     - RxDataSources
     - RxSwift
-  - RxSwiftX/MJRefresh (0.5.2):
+  - RxSwiftX/MJRefresh (0.6.0):
     - MJRefresh
     - RxCocoa
     - RxSwift
@@ -35,9 +36,9 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Differentiator
     - MJRefresh
-    - RxAtomic
     - RxCocoa
     - RxDataSources
+    - RxRelay
     - RxSwift
 
 EXTERNAL SOURCES:
@@ -45,14 +46,14 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
-  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
-  RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
-  RxCocoa: 477990dc3b4c3ff55fb0ac77e1cc06244e0aaec8
-  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
-  RxSwift: 74c29b693c8e42b0f64400e8b06564575742d649
-  RxSwiftX: abdb26ccd9925210466672efd7dfc9aa57a19029
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  RxSwiftX: 4ca3a1e7402314994699c9f2cd4d18da415af179
 
 PODFILE CHECKSUM: 30c6bc76d2c7a8dde2b9d30b77a47381d2150786
 
-COCOAPODS: 1.7.0.beta.2
+COCOAPODS: 1.7.1

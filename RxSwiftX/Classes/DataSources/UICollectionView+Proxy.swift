@@ -13,7 +13,7 @@ public extension Reactive where Base: UICollectionView {
     func items<Proxy: RxCollectionViewDataSourceType & UICollectionViewDataSource & UICollectionViewDelegateFlowLayout, O: ObservableType>(proxy: Proxy)
         -> (_ source: O)
         -> Disposable
-        where Proxy.Element == O.E
+        where Proxy.Element == O.Element
     {
         return { source in
             return source.subscribeCollectionViewProxy(
@@ -30,7 +30,7 @@ public extension Reactive where Base: UICollectionView {
 
 extension ObservableType {
     
-    func subscribeCollectionViewProxy(_ collectionView: UICollectionView, proxy: UICollectionViewDataSource & UICollectionViewDelegateFlowLayout, retainProxy: Bool, binding: @escaping (RxCollectionViewDataSourceProxy, RxCollectionViewDelegateProxy, Event<E>) -> Void)
+    func subscribeCollectionViewProxy(_ collectionView: UICollectionView, proxy: UICollectionViewDataSource & UICollectionViewDelegateFlowLayout, retainProxy: Bool, binding: @escaping (RxCollectionViewDataSourceProxy, RxCollectionViewDelegateProxy, Event<Element>) -> Void)
         -> Disposable {
             let dataSourceProxy = RxCollectionViewDataSourceProxy.proxy(for: collectionView)
             let delegateProxy = RxCollectionViewDelegateProxy.proxy(for: collectionView)
@@ -50,7 +50,7 @@ extension ObservableType {
                 // source can never end, otherwise it would release the subscriber, and deallocate the data source
                 .concat(Observable.never())
                 .takeUntil(collectionView.rx.deallocated)
-                .subscribe { [weak collectionView] (event: Event<E>) in
+                .subscribe { [weak collectionView] (event: Event<Element>) in
                     
                     if let collectionView = collectionView {
                         assert(dataSourceProxy === RxCollectionViewDataSourceProxy.currentDelegate(for: collectionView), "Proxy changed from the time it was first set.\nOriginal: \(dataSourceProxy)\nExisting: \(String(describing: RxCollectionViewDataSourceProxy.currentDelegate(for: collectionView)))")
