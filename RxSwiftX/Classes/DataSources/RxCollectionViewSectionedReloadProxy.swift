@@ -25,17 +25,18 @@ open class RxCollectionViewSectionedReloadProxy<S: SectionModelType>: RxCollecti
     open var referenceSizeForHeaderInSection: ReferenceSizeForHeaderInSection
     open var referenceSizeForFooterInSection: ReferenceSizeForFooterInSection
     
-    public init(configureCell: @escaping ConfigureCell,
-                configureSupplementaryView: ConfigureSupplementaryView? = nil,
-                moveItem: @escaping MoveItem = { _, _, _ in () },
-                canMoveItemAtIndexPath: @escaping CanMoveItemAtIndexPath = { _, _ in false },
-                sizeForItemAtIndexPath: @escaping SizeForItemAtIndexPath = { _, layout, _ in RxCollectionViewSectionedReloadProxy.itemSize(for: layout)  },
-                insetForSectionAtSection: @escaping InsetForSectionAtSection = { _, layout, _ in RxCollectionViewSectionedReloadProxy.sectionInset(for: layout) },
-                minimumLineSpacingForSectionAtSection: @escaping MinimumLineSpacingForSectionAtSection = { _, layout, _ in RxCollectionViewSectionedReloadProxy.minimumLineSpacing(for: layout) },
-                minimumInteritemSpacingForSectionAtSection: @escaping MinimumInteritemSpacingForSectionAtSection = { _, layout, _ in RxCollectionViewSectionedReloadProxy.minimumInteritemSpacing(for: layout) },
-                referenceSizeForHeaderInSection: @escaping ReferenceSizeForHeaderInSection = { _, layout, _ in RxCollectionViewSectionedReloadProxy.headerReferenceSize(for: layout) },
-                referenceSizeForFooterInSection: @escaping ReferenceSizeForFooterInSection = { _, layout, _ in RxCollectionViewSectionedReloadProxy.footerReferenceSize(for: layout) }) {
-        
+    public init(
+        configureCell: @escaping ConfigureCell,
+        configureSupplementaryView: ConfigureSupplementaryView? = nil,
+        moveItem: @escaping MoveItem = { _, _, _ in () },
+        canMoveItemAtIndexPath: @escaping CanMoveItemAtIndexPath = { _, _ in false },
+        sizeForItemAtIndexPath: @escaping SizeForItemAtIndexPath = { _, layout, _ in RxCollectionViewSectionedReloadProxy.itemSize(for: layout)  },
+        insetForSectionAtSection: @escaping InsetForSectionAtSection = { _, layout, _ in RxCollectionViewSectionedReloadProxy.sectionInset(for: layout) },
+        minimumLineSpacingForSectionAtSection: @escaping MinimumLineSpacingForSectionAtSection = { _, layout, _ in RxCollectionViewSectionedReloadProxy.minimumLineSpacing(for: layout) },
+        minimumInteritemSpacingForSectionAtSection: @escaping MinimumInteritemSpacingForSectionAtSection = { _, layout, _ in RxCollectionViewSectionedReloadProxy.minimumInteritemSpacing(for: layout) },
+        referenceSizeForHeaderInSection: @escaping ReferenceSizeForHeaderInSection = { _, layout, _ in RxCollectionViewSectionedReloadProxy.headerReferenceSize(for: layout) },
+        referenceSizeForFooterInSection: @escaping ReferenceSizeForFooterInSection = { _, layout, _ in RxCollectionViewSectionedReloadProxy.footerReferenceSize(for: layout) }
+    ) {
         self.sizeForItemAtIndexPath = sizeForItemAtIndexPath
         self.insetForSectionAtSection = insetForSectionAtSection
         self.minimumLineSpacingForSectionAtSection = minimumLineSpacingForSectionAtSection

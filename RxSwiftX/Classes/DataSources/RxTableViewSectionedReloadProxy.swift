@@ -23,19 +23,20 @@ open class RxTableViewSectionedReloadProxy<Section: SectionModelType>: RxTableVi
     open var viewForHeaderInSection: ViewForHeaderInSection
     open var viewForFooterInSection: ViewForFooterInSection
     
-    public init(configureCell: @escaping ConfigureCell,
-                titleForHeaderInSection: @escaping  TitleForHeaderInSection = { _, _ in nil },
-                titleForFooterInSection: @escaping TitleForFooterInSection = { _, _ in nil },
-                canEditRowAtIndexPath: @escaping CanEditRowAtIndexPath = { _, _ in false },
-                canMoveRowAtIndexPath: @escaping CanMoveRowAtIndexPath = { _, _ in false },
-                sectionIndexTitles: @escaping SectionIndexTitles = { _ in nil },
-                sectionForSectionIndexTitle: @escaping SectionForSectionIndexTitle = { _, _, index in index },
-                heightForRowAtIndexPath: @escaping HeightForRowAtIndexPath = { _, tableView, _, _ in tableView.rowHeight },
-                heightForHeaderInSection: @escaping HeightForHeaderInSection = { _, tableView, _  in tableView.sectionHeaderHeight },
-                heightForFooterInSection: @escaping HeightForFooterInSection = { _, tableView, _  in tableView.sectionFooterHeight },
-                viewForHeaderInSection: @escaping ViewForHeaderInSection = { _, _, _ in nil },
-                viewForFooterInSection: @escaping ViewForFooterInSection = { _, _, _ in nil }) {
-        
+    public init(
+        configureCell: @escaping ConfigureCell,
+        titleForHeaderInSection: @escaping  TitleForHeaderInSection = { _, _ in nil },
+        titleForFooterInSection: @escaping TitleForFooterInSection = { _, _ in nil },
+        canEditRowAtIndexPath: @escaping CanEditRowAtIndexPath = { _, _ in false },
+        canMoveRowAtIndexPath: @escaping CanMoveRowAtIndexPath = { _, _ in false },
+        sectionIndexTitles: @escaping SectionIndexTitles = { _ in nil },
+        sectionForSectionIndexTitle: @escaping SectionForSectionIndexTitle = { _, _, index in index },
+        heightForRowAtIndexPath: @escaping HeightForRowAtIndexPath = { _, tableView, _, _ in tableView.rowHeight },
+        heightForHeaderInSection: @escaping HeightForHeaderInSection = { _, tableView, _  in tableView.sectionHeaderHeight },
+        heightForFooterInSection: @escaping HeightForFooterInSection = { _, tableView, _  in tableView.sectionFooterHeight },
+        viewForHeaderInSection: @escaping ViewForHeaderInSection = { _, _, _ in nil },
+        viewForFooterInSection: @escaping ViewForFooterInSection = { _, _, _ in nil }
+    ) {
         self.heightForRowAtIndexPath = heightForRowAtIndexPath
         self.heightForHeaderInSection = heightForHeaderInSection
         self.heightForFooterInSection = heightForFooterInSection
